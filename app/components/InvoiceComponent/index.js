@@ -45,7 +45,7 @@ function InvoiceComponent(props) {
             <TableChildTitle>{item.title}</TableChildTitle>
             <TableChildAmount>{item.amount}</TableChildAmount>
             <TableChildAmount>
-              {Math.trunc(item.amount * item.price)}
+              {Math.floor(item.amount * item.price)}
             </TableChildAmount>
           </TableWrapper>
         ))}
@@ -55,7 +55,7 @@ function InvoiceComponent(props) {
             <FormattedMessage {...messages.productSumText} />
           </TableChildTitle>
           <TableChildAmount>{totalAmount}</TableChildAmount>
-          <TableChildAmount>{Math.trunc(totalBaht)}</TableChildAmount>
+          <TableChildAmount>{Math.floor(totalBaht)}</TableChildAmount>
         </TableWrapper>
       </InvoiceWrapper>
     </React.Fragment>
