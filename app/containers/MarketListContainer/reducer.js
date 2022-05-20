@@ -48,7 +48,7 @@ const marketListContainerReducer = (state = initialState, action) =>
           },
         };
         draft.totalAmount += 1;
-        draft.totalBaht += action.payload.price;
+        draft.totalBaht += Math.floor(action.payload.price);
         break;
       case CLEAR_DATA:
         draft.productData = false;
