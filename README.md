@@ -2,7 +2,7 @@
 
 Market place Project is a test react application e-commerce
 
-## install python library 
+## install npm library 
 ```
 npm install
 
