@@ -45,7 +45,7 @@ function InvoiceComponent(props) {
             <TableChildTitle>{item.title}</TableChildTitle>
             <TableChildAmount>{item.amount}</TableChildAmount>
             <TableChildAmount>
-              {Math.floor(item.amount * item.price)}
+              {item.amount * Math.floor(item.price)}
             </TableChildAmount>
           </TableWrapper>
         ))}
