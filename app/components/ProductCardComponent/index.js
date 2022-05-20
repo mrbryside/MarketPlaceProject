@@ -34,7 +34,7 @@ function ProductCardComponent(props) {
             <TextControlWidth>{`Desciption: ${
               item.description
             }`}</TextControlWidth>
-            <TextPrice>{`$${item.price}`}</TextPrice>
+            <TextPrice>{`฿${item.price}`}</TextPrice>
             <AddCartButton onClick={() => onAddItemtoCart(item)}>
               <FormattedMessage {...messages.addtoCartButtonText} />
             </AddCartButton>
