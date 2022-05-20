@@ -15,7 +15,7 @@ import {
 } from './styles/styles';
 import messages from './messages';
 
-function LoginBox(props) {
+function LoginBoxComponent(props) {
   const { username, setUsername } = props;
   return (
     <LoginBoxWrapper>
@@ -35,9 +35,9 @@ function LoginBox(props) {
   );
 }
 
-LoginBox.propTypes = {
+LoginBoxComponent.propTypes = {
   username: PropTypes.string,
   setUsername: PropTypes.func,
 };
 
-export default memo(LoginBox);
+export default memo(LoginBoxComponent);

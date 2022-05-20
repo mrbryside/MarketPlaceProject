@@ -7,7 +7,7 @@
 
 import React, { useState } from 'react';
 import TopBarComponent from 'components/TopBarComponent';
-import LoginBox from 'components/LoginBox';
+import LoginBoxComponent from 'components/LoginBoxComponent';
 import { FormattedMessage } from 'react-intl';
 import { Helmet } from 'react-helmet';
 import { WrapperBox } from './styles/styles';
@@ -26,7 +26,7 @@ export default function LoginContainer() {
       </FormattedMessage>
       <TopBarComponent />
       <WrapperBox>
-        <LoginBox setUsername={setUsername} username={username} />
+        <LoginBoxComponent setUsername={setUsername} username={username} />
       </WrapperBox>
     </React.Fragment>
   );
